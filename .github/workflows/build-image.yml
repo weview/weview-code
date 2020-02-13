@@ -13,6 +13,6 @@ jobs:
       uses: elgohr/Publish-Docker-Github-Action@master
       with:
         name: weview/weview-code/main
-        username: ${{ GITHUB_ACTOR }}
+        username: $GITHUB_ACTOR
         password: ${{ secrets.GITHUB_TOKEN }}
         registry: docker.pkg.github.com
